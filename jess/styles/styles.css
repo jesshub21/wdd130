@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C0D6FF;
+    font-family: 'DM Sans', sans-serif;
+    color: #6D0101;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    align-items: center;
+    background-color: #C0D6FF;
+    padding: 15px 40px;
+    gap: 20px;
+}
+
+#logo_link {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.site-title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    margin: 0;
+    color: #6D0101;
+}
+
+.site-title h2 {
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin: 5px 0 0;
+    color: #F86C25;
+}
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    color: #6D0101;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #F86C25;
+    border-bottom: 2px solid #F86C25;
+}
+
+/* MAIN */
+
+main {
+    padding: 50px 30px;
+}
+
+section {
+    text-align: center;
+    margin: 30px auto;
+    padding: 60px 30px;
+    border-radius: 20px;
+}
+
+#about-me {
+    background-color: #FFD5FB;
+    max-width: 1000px;
+}
+
+#about-me h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    background-color: #FFD5FB;
+}
+
+#about-me p {
+    font-size: 19px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.about-me-card {
+    background-color: #FCF4F0;
+    max-width: 1000px;
+    min-height: 250px;
+}
+
+.about-me-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.about-me-card p {
+    font-size: 20px;
+    color: #F86C25;
+    font-style: italic;
+}
