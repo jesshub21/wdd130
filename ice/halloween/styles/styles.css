@@ -1,0 +1,78 @@
+ @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap');
+     * {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #13051f, #30104b, #08040e);
+    color: #f8eaff;
+    font-family: 'Nosifer', cursive;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 10px auto;
+    background-color: #30104b;
+}
+
+header {
+    display: flex;
+    box-shadow: 0 5px 20px #ff790055;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px;
+    margin: 100;
+    background-color: transparent;
+    list-style-type: none;
+}
+
+nav li {
+    color: #ff9d00;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 85px;
+    color: #ff7900;
+    letter-spacing: 5px;
+    text-shadow: 10px 0px 20px #e2853a;
+    background-color: transparent;
+}
+h2{
+    font-family: 'Nosifer', cursive;
+    font-size: 50px;
+    color: #ff7900;
+    letter-spacing: 5px;
+    text-shadow: 10px 0px 20px #e2853a;
+
+}
+
+h1:hover, h2:hover {
+    color: #ffaa33; 
+    text-shadow: 0 0 15px #ff7900, 
+                 0 0 15px #ff7900, 
+                 0 0 15px #ff7900;
+}
+
+nav ul li:hover {
+    color: #ffaa33;
+    text-shadow: 0 0 15px #ff7900, 
+                 0 0 15px #ff7900, 
+                 0 0 15px #ff7900;
+}
+img {
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #30104b;
+    background-color: #30104b;
+}
