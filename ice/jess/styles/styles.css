@@ -20,7 +20,6 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 100px 1fr auto;
     align-items: center;
     background-color: #C0D6FF;
     padding: 15px 40px;
@@ -28,13 +27,19 @@ header {
 }
 
 #logo_link {
-    display: flex;
+    grid-column: 1;
+    grid-row: 1;
     align-items: center;
 }
 
 .logo {
-    width: 80px;
+    width: 100px;
     height: auto;
+}
+.site-title {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
 }
 
 .site-title h1 {
@@ -45,7 +50,7 @@ header {
 }
 
 .site-title h2 {
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 5px;
     margin: 5px 0 0;
     color: #F86C25;
@@ -53,7 +58,9 @@ header {
 nav {
     display: flex;
     gap: 25px;
-    align-items: center;
+    justify-self: center;
+    grid-column: 1 / 4;
+    grid-row: 2;
 }
 
 nav a {
@@ -121,6 +128,8 @@ section {
 
 .social a img{
     width: 100px;
+     height: 40px;
+     justify-self: right;
 }
 .social{
     display: flex;
@@ -128,10 +137,17 @@ section {
     gap: 0px
 }
 .footer-logo{
-    width: 50px;
-
+    display: flex;
+    align-items: right;
+    background-color: #C0D6FF;
+    padding: 20px 40px;
 }
-.logo {
-    width: 50px;
 
+.footer-logo{
+    width: 200px;
+    gap: 20px;
+}
+
+footer p {
+    font-size: 14px;
 }
