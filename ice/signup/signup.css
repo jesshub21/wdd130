@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #806746;
+    font-family: 'georgia', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 17px;
+}
+#header {
+    height: 170px;
+    background-image: url("images/jesus_feeds_5000.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#headerText h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px black;
+}
+
+#headerText h2 {
+    font-size: 25px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.bookFooter {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100px;
+    background-color: white;
+    gap: 3px;
+}
+
+.bookFooter img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+
+}
+
+#formContainer {
+    width: 420px;
+    background-color: white;
+    border: 10px solid #063a9c;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+#formContainer h3 {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 20px;
+    padding: 0 20px 20px;
+}
+
+form > label {
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 170px;
+    height: 21px;
+}
+
+section {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+section button {
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    padding: 1px 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#output {
+    background-color: white;
+    padding: 15px;
+    max-width: 420px;
+}
+
+#output:empty {
+    display: none;
+}
+
+@media (max-width: 440px) {
+    #formContainer {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 100%;
+    }
+}
