@@ -94,10 +94,25 @@ section {
     max-width: 1000px;
 }
 
+#about-me img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    gap: 30px;
+    box-shadow: 0 0 20px #6D0101;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    }
+
 #about-me h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: #FFD5FB;
 }
 
@@ -126,21 +141,37 @@ section {
     font-style: italic;
 }
 
+.my_work h2{
+   justify-items: center;
+    
+}
+
+.my_work img {
+    gap: 2px;
+    margin: 10px auto;
+    background-color: #6D0101;
+    padding: 10px;
+    max-width: 150px;
+    width: 150%;
+    height: 190px;
+    justify-self: center;
+}
+
 .social a img{
-    width: 100px;
-     height: 40px;
-     justify-self: right;
+    width: 70px;
+    height: 50px;
+    justify-self: right;
 }
 .social{
     display: flex;
     align-items: center; 
-    gap: 0px
+    gap: 10px
 }
 .footer-logo{
     display: flex;
     align-items: right;
     background-color: #C0D6FF;
-    padding: 20px 40px;
+    padding: 10px 40px;
 }
 
 .footer-logo{
